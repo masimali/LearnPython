@@ -1,4 +1,5 @@
 # list
+print("======List======")
 squares = [1, 4, 9, 16, 25]
 print(squares[0])  # first element of list
 print(squares[-1])  # first element of list reverse order
@@ -23,3 +24,39 @@ letters[2:5] = []
 print(letters)
 letters[:] = []  # clear the list by replacing all the elements with an empty list
 print(letters)
+print("======Data Structures======")
+fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+print(fruits.count('apple'))
+print(fruits.count('tangerine'))
+print(fruits.index('banana'))
+print(fruits.index('banana', 4))  # Find next banana starting a position 4
+fruits.reverse()
+print(fruits)
+fruits.append('grape')
+print(fruits)
+fruits.sort()
+print(fruits)
+fruits.pop()  # pull out the last element from the list
+print(fruits)
+print("======= Using Lists as Stacks ========")
+stack = [3, 4, 5]
+stack.append(6)  # Add item at top of stack
+stack.append(7)  # Add item at top of stack
+print(stack)
+stack.pop()  # pull out the element from the top of stack
+stack.pop()  # pull out the element from the top of stack
+print(stack)
+print("======= Using Lists as Queues ========")
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+queue.append("Terry")
+queue.append("Graham")
+print(queue)
+print(queue.popleft())
+print(queue.popleft())
+print(queue)
+squares2 = []
+for x in range(10):
+    squares2.append(x ** 2)
+print(squares2)
+
